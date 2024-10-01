@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>some content1</div>
+    <div>some content2</div>
+    <div>some content3</div>
+    <div>some content4</div>
+    <div>some content5</div>
+
+    <button onclick="styles()">Click me</button>
+    <script>
+        var a=document.getElementsByTagName("div");
+        count=0;
+        function styles(){
+            // color generator
+            let arr=["aqua", "blue", "green", "pink", "chocolate", "purple", "violet"];
+                document.getElementsByTagName("body")[0].style.backgroundColor=arr[count++];
+                
+                a[0].innerText="hello world";
+                a[0].style.color="red";
+                a[0].style.fontSize="50px";
+                a[0].style.fontFamily="cursive";
+        }
+    </script>
+</body>
+</html>
